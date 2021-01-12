@@ -5,7 +5,7 @@ from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
 
-line_bot_api = LineBotApi(getenv('TOKEN')
+line_bot_api = LineBotApi(getenv('TOKEN'))
 handler = WebhookHandler(getenv('SECRET'))
 
 app = Flask(__name__)
